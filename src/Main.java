@@ -1,3 +1,5 @@
+import Ls18.LS18MyRound;
+
 /**
  * First * 14.05.2020  12:09
  */
@@ -12,13 +14,13 @@ public class Main {
 
         System.out.println("Result with FOR "
                 + LS18MyRound.roundDigit(123.456789, 3));
-        //LS18MyRound.roundDigitString();
+        //Ls18.LS18MyRound.roundDigitString();
         LS18MyRound.roundDigitNoFor();
 
-//        Ls18ConvertDigitsNew.convertBinaryToAnything(154,2);
-//        Ls18ConvertDigitsNew.convertBinaryToDecimal(154);
-//        Ls18ConvertDigitsNew.convertDecimalToAnything(10101,2);
-//        Ls18ConvertDigitsNew.convertDecimalToBinary(10101);
+//        Ls18.Ls18ConvertDigitsNew.convertBinaryToAnything(154,2);
+//        Ls18.Ls18ConvertDigitsNew.convertBinaryToDecimal(154);
+//        Ls18.Ls18ConvertDigitsNew.convertDecimalToAnything(10101,2);
+//        Ls18.Ls18ConvertDigitsNew.convertDecimalToBinary(10101);
 
 
     }

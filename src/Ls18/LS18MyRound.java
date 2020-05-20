@@ -1,3 +1,5 @@
+package Ls18;
+
 public class LS18MyRound {
     public static double roundDigit(double digitNumber, int index) {
         int multiplucator = 10;

@@ -1,3 +1,5 @@
+package Ls19;
+
 public class Ls19Exercises {
     public static void main(String[] args) {
         boolean weekday = true;

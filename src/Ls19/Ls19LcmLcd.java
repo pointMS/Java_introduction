@@ -1,3 +1,5 @@
+package Ls19;
+
 public class Ls19LcmLcd {
     public static void main(String[] args) {
         System.out.println(largestCommonDenomiator(15, 20));
