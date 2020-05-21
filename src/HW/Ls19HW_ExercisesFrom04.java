@@ -4,10 +4,10 @@ public class Ls19HW_ExercisesFrom04 {
     public static void main(String[] args) {
 
         //backAround("Google");
-        //startHi();
+        startHi();
         //System.out.println(hasTeen(5, 16, 20));
-        mixStart();
-        close10(5,8,10);
+        //mixStart();
+        //close10(5,8,10);
 
 
     }
