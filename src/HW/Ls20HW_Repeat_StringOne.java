@@ -6,7 +6,7 @@ public class Ls20HW_Repeat_StringOne {
         //helloName("Bob", "Hello, ", '!');
         //makeOutWord("<<>>", "WooHoo");
         //firstHalf("WooHoo");
-        //nonStart("Great ", "job");
+        //System.out.println(nonStart("Great ", "job"));
 
         //System.out.println(theEnd("garden", false));
         //System.out.println(theEnd("garden", true));
@@ -19,13 +19,13 @@ public class Ls20HW_Repeat_StringOne {
         //seeColor("blueAndRed","blue");
         //extraFront("ABC", 3);
 
-        //makeAbba();
+        //System.out.println(makeAbba("Hi", "Bye"));
         //extraEnd("Hello");
         //withoutEnd("present");
         //leftTwo("spargel-");
-        //withoutEndTwo("");
+        //System.out.println(withoutEndTwo("lalalala"));
         //nTwice("myexampletext", 3);
-        System.out.println(hasBad());
+        //System.out.println(hasBad());
 
     }
 
@@ -45,16 +45,17 @@ public class Ls20HW_Repeat_StringOne {
         System.out.println(text.substring(0, text.length() / 2));
     }
 
-    public static void nonStart(String first, String second) {
+    public static String nonStart(String first, String second) {
         //4.Given 2 strings, return their concatenation, except omit the first char of each.
         // The strings will be at least length 1.
-        System.out.println((first + second).substring(1, (first + second).length()));
+        String result = first.substring(1, first.length()) + second.substring(1, second.length());
+        return result;
     }
 
     public static String theEnd(String text, boolean mark) {
         //5.Given a string, return a string length 1 from its front, unless front is false,
         //in which case return a string length 1 from its back. The string will be non-empty.
-        if (!mark) {
+        if (mark == false) {
             return (text.substring(text.length() - 1, text.length()));
         } else {
             return (text.substring(0, 1));
@@ -107,23 +108,10 @@ public class Ls20HW_Repeat_StringOne {
         }
     }
 
-    public static void startWord() {
-        //11.Given a string and a second "word" string, we'll say that the word matches the string
-        // if it appears at the front of the string, except its first char does not need to match exactly.
-        // On a match, return the front of the string, or otherwise return the empty string.
-        // So, so with the string "hippo" the word "hi" returns "hi" and "xip" returns "hip".
-        // The word will be at least length 1.
-        String text = "hippo";
-        String check = "hi";
-    } //пропущено
-
-    public static void makeAbba() {
+    public static String makeAbba(String first, String last) {
         //12.Given two strings, a and b, return the result of putting them together in the order abba,
         // e.g. "Hi" and "Bye" returns "HiByeByeHi".
-        String first = "Hi";
-        String last = "Bye";
-        System.out.println(first + last + last + first);
-        System.out.println(first.concat(last.concat(last.concat(first))));
+        return first.concat(last.concat(last.concat(first)));
     }
 
     public static void extraEnd(String text) {
@@ -142,15 +130,16 @@ public class Ls20HW_Repeat_StringOne {
         System.out.println(text.substring(2, text.length()) + text.substring(0, 2));
     }
 
-    public static void withoutEndTwo(String text) {
+    public static String withoutEndTwo(String text) {
         //16.Given a string, return a version without both the first and last char of the string.
         //The string may be any length, including 0
+        String result = "";
         if (text.length() < 1) {
-            System.out.println(" ");
+            result = " ";
         } else {
-            System.out.println(text.substring(1, text.length() - 1));
+            result = text.substring(1, text.length() - 1);
         }
-
+        return result;
     }
 
     public static void nTwice(String text, int n) {
@@ -159,16 +148,4 @@ public class Ls20HW_Repeat_StringOne {
         System.out.println(text.substring(0, n) + text.substring(text.length() - n));
     }
 
-    public static boolean hasBad() {
-        //18.Given a string, return true if "bad" appears starting at index 0 or 1 in the string,
-        // such as with "badxxx" or "xbadxx" but not "xxbadxx".
-        // The string may be any length, including 0. Note: use .equals() to compare 2 strings.
-        String text = "bad";
-        String textTwo = "xbadxxx";
-
-        if (textTwo.contains(text)) {
-            return true;
-        } else
-            return false;
-    } // not finished
 }
