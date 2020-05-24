@@ -1,10 +1,12 @@
-package Ls19_May19;
+package Exercises;
 /* 21.05.2020*/
 
-public class Ls19HW_Repeat_LogicOne {
+public class HW_Repeat_LogicOne_May21 {
     public static void main(String[] args) {
         //System.out.println(cigarParty(70, true)); //true
-        //caugthSpeeding(65, true); // no ticket
+        //caughtSpeeding(65, true); // no ticket
+
+        System.out.println(caughtSpeedingTwo(66, false));
         //System.out.println(love6(1, 5)); // true
 
     }
@@ -14,19 +16,32 @@ public class Ls19HW_Repeat_LogicOne {
         // A squirrel party is successful when the number of cigars is between 40 and 60, inclusive.
         // Unless it is the weekend, in which case there is no upper bound on the number of cigars.
         // Return true if the party with the given values is successful, or false otherwise.
-        if (nCigar >= 40 | nCigar <= 60 & weekend | nCigar >= 60 & !weekend) {
+        if (weekend) return (nCigar >= 40);
+        return (nCigar >= 40 && nCigar <= 60);
+        /* if (nCigar >= 40 | nCigar <= 60 & weekend | nCigar >= 60 & !weekend) {
             return true;
         }
         return false;
+         */
     }
 
-    public static boolean caugthSpeeding(int speed, boolean birthday) {
+    public static int caughtSpeedingTwo(int speed, boolean birthday) {
+
+        if (speed <= 60 | !birthday) return 0;
+        else if (speed >= 61 | speed <= 80 | !birthday) return 1;
+        else if (speed >= 81 | !birthday) return 2;
+
+        return speed;
+    }
+
+    public static boolean caughtSpeeding(int speed, boolean birthday) {
         //2. You are driving a little too fast, and a police officer stops you.
         // Write code to compute the result, encoded as an int value: 0=no ticket, 1=small ticket, 2=big ticket.
         // If speed is 60 or less, the result is 0.
         // If speed is between 61 and 80 inclusive, the result is 1.
         // If speed is 81 or more, the result is 2.
         // Unless it is your birthday -- on that day, your speed can be 5 higher in all cases.
+
         if (speed <= 60 | !birthday ^ speed <= 65 | birthday) {
             System.out.println("no ticket");
         } else if (speed >= 61 | speed <= 80 | !birthday ^ speed >= 66 | speed <= 85 | birthday) {

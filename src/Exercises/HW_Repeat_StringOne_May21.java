@@ -1,7 +1,7 @@
-package Ls20_May20;
+package Exercises;
 /*20.05.2020*/
 
-public class Ls20HW_Repeat_StringOne {
+public class HW_Repeat_StringOne_May21 {
     public static void main(String[] args) {
         //helloName("Bob", "Hello, ", '!');
         //makeOutWord("<<>>", "WooHoo");
