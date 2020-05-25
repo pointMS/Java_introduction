@@ -20,9 +20,9 @@ public class HW_Repeat_StringOne_May24 {
 //        System.out.println(without2("HelloHi")); //HelloHi
 //        System.out.println(without2("Hi")); //""
 
-//        System.out.println(withoutX("xHix")); //Hi
-//        System.out.println(withoutX("xHi")); //Hi
-//        System.out.println(withoutX("Hxix")); //Hxi
+        System.out.println(withoutX("xHix")); //Hi
+        System.out.println(withoutX("xHi")); //Hi
+        System.out.println(withoutX("Hxix")); //Hxi
 
 //        System.out.println(firstTwo("Hello")); //He
 //        System.out.println(firstTwo("abcdef")); //ab
@@ -55,10 +55,10 @@ public class HW_Repeat_StringOne_May24 {
 //        System.out.println(deFront("ebony")); // bony
 //        System.out.println(deFront("letstry")); // tstry
 
-        System.out.println(withoutX2("xxYes")); //Yes
-        System.out.println(withoutX2("Wxhy")); //Why
-        System.out.println(withoutX2("xNew")); //New
-        System.out.println(withoutX2("Old")); //Old
+//        System.out.println(withoutX2("xxYes")); //Yes
+//        System.out.println(withoutX2("Wxhy")); //Why
+//        System.out.println(withoutX2("xNew")); //New
+//        System.out.println(withoutX2("Old")); //Old
 
 
     }
