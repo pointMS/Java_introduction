@@ -10,13 +10,23 @@ public class Ls22HW_Palindrome {
         System.out.println(checkPalindrome("java")); //false
     }
 
-    private static boolean checkPalindrome(String text) {
-        String noSpaceText = text.replace(" ", "").toLowerCase();
-        StringBuffer backText = new StringBuffer(noSpaceText).reverse();
-        String backTextOne = backText.toString();
+    //решено в классе
+    private static boolean checkPalindrome(String myPolindrome) {
+        myPolindrome = myPolindrome.toLowerCase().replace(" ","");
+        boolean result = false;
+        String reversePalindrome = "";
 
-        if (noSpaceText.equals(backTextOne)) return true;
-        else return false;
+        for (int i = 0; i < myPolindrome.length(); i++) {
+            reversePalindrome = myPolindrome.charAt(i) + reversePalindrome;
+        }
+        if(myPolindrome.equals(reversePalindrome)){
+            return true;
+        }
+
+        return result;
     }
-
 }
+
+//        StringBuffer backText = new StringBuffer(noSpaceText).reverse();
+//        String backTextOne = backText.toString();
+//        if (noSpaceText.equals(backTextOne)) return true;
