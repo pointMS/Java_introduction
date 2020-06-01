@@ -1,4 +1,4 @@
-package Lesson01;
+package Ls01_05;
 
 /**
  * First

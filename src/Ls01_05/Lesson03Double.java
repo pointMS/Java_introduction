@@ -1,3 +1,5 @@
+package Ls01_05;
+
 public class Lesson03Double {
     public static void main(String[] args) {
         //addFloat();

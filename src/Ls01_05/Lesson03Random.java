@@ -1,4 +1,4 @@
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+package Ls01_05;
 
 public class Lesson03Random {
     public static void main(String[] args) {

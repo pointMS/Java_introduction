@@ -68,8 +68,11 @@ public class LS23_Loops {
         lastLetterInAlphabet = az.codePointAt(1);
 
         for (int i = firstLetterInAlphabet; i <= lastLetterInAlphabet; i++) {
-            //char c = '';
+            char c = (char) i;
+            String result = ""; // создаем для автоматического кастования в стринг
+            //чтобы чары не суммировались
+            System.out.print(result + c + c + c + c);
+            System.out.println();
         }
-
     }
 }

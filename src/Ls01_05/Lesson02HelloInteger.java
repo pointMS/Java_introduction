@@ -1,3 +1,4 @@
+package Ls01_05;
 /* Знакомство с базовыми типами даных
  * Определение,объявление и инициализация переменных
  * Definition, declaration, initialization

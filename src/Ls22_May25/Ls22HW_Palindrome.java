@@ -10,7 +10,7 @@ public class Ls22HW_Palindrome {
         System.out.println(checkPalindrome("java")); //false
     }
 
-    //решено в классе
+    //решено в классе 26/05/2020
     private static boolean checkPalindrome(String myPolindrome) {
         myPolindrome = myPolindrome.toLowerCase().replace(" ","");
         boolean result = false;
@@ -18,15 +18,16 @@ public class Ls22HW_Palindrome {
 
         for (int i = 0; i < myPolindrome.length(); i++) {
             reversePalindrome = myPolindrome.charAt(i) + reversePalindrome;
+            // присоединяем новое значение к предыдущему и оно становится впереди
         }
-        if(myPolindrome.equals(reversePalindrome)){
+        if(myPolindrome.equals(reversePalindrome)){ //сравниваем новый и оригинальный вариант
             return true;
         }
 
         return result;
     }
 }
-
+// решено дома 25/05/2020
 //        StringBuffer backText = new StringBuffer(noSpaceText).reverse();
 //        String backTextOne = backText.toString();
 //        if (noSpaceText.equals(backTextOne)) return true;
