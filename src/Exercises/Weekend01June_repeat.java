@@ -1,6 +1,6 @@
 package Exercises;
 
-public class Weekend_repeat {
+public class Weekend01June_repeat {
     public static void main(String[] args) {
 
 //        System.out.println(doubleChar("The"));
@@ -55,10 +55,10 @@ public class Weekend_repeat {
 //        int[] a1 = new int[]{1, 2, 3};
 //        printArray(reverse3(a1));
 
-        int[] arr1 = new int[]{1, 2, 3};
-        int[] arr11 = new int[]{4, 5, 6};
-        int[] arr2 = new int[]{7, 7, 7};
-        int[] arr21 = new int[]{3, 8, 0};
+//        int[] arr1 = new int[]{1, 2, 3};
+//        int[] arr11 = new int[]{4, 5, 6};
+//        int[] arr2 = new int[]{7, 7, 7};
+//        int[] arr21 = new int[]{3, 8, 0};
 //
 //        printArray(middleWay(arr1,arr11));
 //        printArray(middleWay(arr2,arr21));
@@ -66,9 +66,13 @@ public class Weekend_repeat {
 //        System.out.println(no23(arr1)); //false
 //        System.out.println(no23(arr11)); //true
 
-        printArray(fix23(arr1)); //1.2.0
-        printArray(fix23(arr11)); //4.5.6
+//        printArray(fix23(arr1)); //1.2.0
+//        printArray(fix23(arr11)); //4.5.6
 
+        int[] arrA = new int[]{1, 2};
+        int[] arrB = new int[]{3, 4};
+
+        //printArray(plusTwo(arrA, arrB));
     }
 
     public static int[] middleWay(int[] c1, int[] c2) {
@@ -98,6 +102,15 @@ public class Weekend_repeat {
         return array;
 
     }
+
+//    public static int[] plusTwo(int[] arrA, int[] arrB) {
+//        //Arrays1-16 Given 2 int arrays, each length 2, return a new array length 4 containing all their elements.
+//        int []arrayAB =
+//
+//
+//
+//        return arrayAB;
+//    }
 
 
     public static String doubleChar(String str) {

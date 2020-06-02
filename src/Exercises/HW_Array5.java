@@ -14,7 +14,7 @@ public class HW_Array5 {
     }
 
     public static boolean no23(int[] arr1) {
-        //Given an int array length 2, return true if it does not contain a 2 or 3.
+        //array1-5 Given an int array length 2, return true if it does not contain a 2 or 3.
         //Дан целочисленный массив из двух элементов, верните true, если он не содержит цифры 2 или 3
         for (int element : arr1) {
             //System.out.println("element = " + element);
