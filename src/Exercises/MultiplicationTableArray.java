@@ -38,5 +38,9 @@ public class MultiplicationTableArray {
         System.out.println(array[2][0] + ", " + array[2][1]+ ", " + array[2][2]+ ", " + array[2][3]+ ", " + array[2][4]+ ", " + array[2][5]);
     //способ вывода третьей строки плохой, но другой не придумался.
     }
+
+    public static void sumArray(){
+
+    }
 }
 
