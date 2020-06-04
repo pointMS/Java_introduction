@@ -1,4 +1,4 @@
-package Ls28_June03;
+package Sorting;
 // from Maria
 public class CombSort {
     public static void main(String[] args) {

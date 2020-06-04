@@ -1,4 +1,4 @@
-package Ls28_June03;
+package Sorting;
 
 public class CombSortTest {
     public static void main(String[] args) {

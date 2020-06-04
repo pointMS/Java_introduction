@@ -2,7 +2,7 @@ package Exercises;
 
 import java.util.Arrays;
 
-public class Ls29Exercises {
+public class Ls29Exercises_June04 {
     public static void main(String[] args) {
 
         //System.out.println(countX("xxhixx")); //4
