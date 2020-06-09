@@ -42,7 +42,8 @@ public class Minesweeper {
     }
 
     public static void toPrint(String[][] arrayToPrint) {
-        for (String[] elementArray : arrayToPrint) { // проверка мал. массива elementArray, кот. находится в большом массиве arrayToPrint
+        for (String[] elementArray : arrayToPrint) { // проверка мал. массива elementArray,
+            // кот. находится в большом массиве arrayToPrint
             for (String element : elementArray) { // проверка элементов в маленьком массиве elementArray
                 System.out.print(" " + element);
             }

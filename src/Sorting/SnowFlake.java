@@ -2,8 +2,9 @@ package Sorting;
 
 public class SnowFlake {
     public static void main(String[] args) {
-        
-        toPrint(makeSnowflake());
+
+        //toPrint(makeSnowflake());
+        toPrint(snowFlakeJulia());
     }
 
     public static String[][] makeSnowflake() {
@@ -24,11 +25,29 @@ public class SnowFlake {
         return array;
     }
 
+    public static String[][] snowFlakeJulia() {
+        int line = 11;
+        String[][] output = new String[line][line];
+        String space = " ";
+        String star = "*";
+
+        for (int i = 0; i < line; i++) {
+            for (int j = 0; j < line; j++) {
+                if (i == (line / 2) || j == (line / 2) || i == j|| (i+j) == line-1) {
+                    output[i][j] = star;
+                } else {
+                    output[i][j] = space;
+                }
+            }
+        }
+        return output;
+    }
+
 
     public static void toPrint(String[][] arrayToPrint) {
         for (String[] arrayInside : arrayToPrint) {
             for (String element : arrayInside) {
-                System.out.print(element + " ");
+                System.out.print(element + "  ");
             }
             System.out.println();
         }
