@@ -1,4 +1,4 @@
-package Ls32_June09;
+package Exercises;
 
 import java.util.Arrays;
 
@@ -13,13 +13,13 @@ public class Ls32HWArrays2_12 {
         System.out.println(Arrays.toString(fizzBuzz(a2)));
         System.out.println(Arrays.toString(fizzBuzz(a3)));
 
-        int[] b1 = new int[]{10, 3, 5, 6};
-        int[] b2 = new int[]{7, 2, 10, 9};
-        int[] b3 = new int[]{2, 10, 7, 2};
-
-        System.out.println(bigDiff(b1));
-        System.out.println(bigDiff(b2));
-        System.out.println(bigDiff(b3));
+//        int[] b1 = new int[]{10, 3, 5, 6};
+//        int[] b2 = new int[]{7, 2, 10, 9};
+//        int[] b3 = new int[]{2, 10, 7, 2};
+//
+//        System.out.println(bigDiff(b1));
+//        System.out.println(bigDiff(b2));
+//        System.out.println(bigDiff(b3));
 
     }
 
@@ -36,9 +36,7 @@ public class Ls32HWArrays2_12 {
 
         //Вернуть новый стринг длинной, не включающей последнее значение, где перечислены цифры между заданными значениями.
         //но  %3 заменить на Fizz, %5 = Buzz, %3&%5- %15 = FizzBuzz
-        String f = "Fizz";
-        String b = "Buzz";
-        String fb = "FizzBuzz";
+
         int first = array[0];
         int last = array[1];
         int length = last - first;
@@ -47,12 +45,12 @@ public class Ls32HWArrays2_12 {
         String[] output = new String[length];
 
         for (int i = first; i < last; i++) {
-            if (i % 15 == 0) {
-                output[i - first] = fb;
+            if (i % 3 == 0 && i % 5 == 0) {
+                output[i - first] = "FizzBuzz";
             } else if (i % 5 == 0) {
-                output[i - first] = b;
+                output[i - first] = "Buzz";
             } else if (i % 3 == 0) {
-                output[i - first] = f;
+                output[i - first] = "Fizz";
             } else
                 output[i - first] = String.valueOf(i);
         }

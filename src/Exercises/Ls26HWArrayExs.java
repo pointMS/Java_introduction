@@ -1,4 +1,4 @@
-package Ls26_May29;
+package Exercises;
 
 import java.util.Arrays;
 

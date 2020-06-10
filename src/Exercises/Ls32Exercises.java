@@ -1,4 +1,4 @@
-package Ls32_June09;
+package Exercises;
 
 import java.util.Arrays;
 

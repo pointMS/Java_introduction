@@ -1,4 +1,4 @@
-package Ls25_May28;
+package Exercises;
 
 public class Ls25_HW_Array6_7 {
     public static void main(String[] args) {
