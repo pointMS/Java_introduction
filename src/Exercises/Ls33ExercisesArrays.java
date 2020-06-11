@@ -3,7 +3,7 @@ package Exercises;
 import java.sql.DataTruncation;
 
 /*10.06.2020*/
-public class Ls33Exercises {
+public class Ls33ExercisesArrays {
     public static void main(String[] args) {
 //        int[] a1 = {1, 2, 2}; //5
 //        int[] a2 = {1, 2, 2, 6, 99, 99, 7, 25}; //30
@@ -35,6 +35,7 @@ public class Ls33Exercises {
 
 
     }
+
 
     public static boolean isEverywhere(int[] array, int n) {
         //Arrays02-17 We'll say that a value is "everywhere" in an array

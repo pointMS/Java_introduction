@@ -1,8 +1,8 @@
 package Exercises;
-
+/*05.06.2020*/
 import java.util.Arrays;
 
-public class Ls30Exercises_June05 {
+public class Ls30ExercisesArrays {
     public static void main(String[] args) {
         int[] a = {5, 6, 45, 99, 13, 5, 6};
 //        System.out.println(sameEnds(a, 1)); //false

@@ -2,7 +2,7 @@ package Exercises;
 
 import java.util.Arrays;
 
-public class Ls32Exercises {
+public class Ls32ExercisesArrays {
     public static void main(String[] args) {
 //        int[] a1 = {2, 4, 1, 2};
 //        int[] a2 = {4, 1, 4, 2};
