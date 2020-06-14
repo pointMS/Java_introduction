@@ -1,12 +1,32 @@
 package Sorting;
 
+import java.util.Arrays;
+
 public class BubbleSort {
     public static void main(String[] args) {
 
-        int[] unSortArray = new int[]{104, 64, 34, 25, 12, 22, 11, 90};
+        int[] unSortArray = new int[]{104, 1, 89, 64, 34, 25, 12, 22, 11, 90};
         //myArrayPrint(bubbleSortRecursion(unSortArray));
 
-        myArrayPrint(bubbleSort(unSortArray));
+        //myArrayPrint(bubbleSort(unSortArray));
+
+        System.out.println(Arrays.toString(bubbleSortRepeat(unSortArray)));
+    }
+
+    public static int[] bubbleSortRepeat(int[] array) {
+        boolean unsorted = true;
+        while (unsorted) {
+            unsorted = false;
+            for (int i = 0; i < array.length - 1; i++) {
+                if (array[i] > array[i + 1]) {
+                    int temp = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = temp;
+                    unsorted = true;
+                }
+            }
+        }
+        return array;
     }
 
     public static int[] bubbleSortRecursion(int[] myArray) {

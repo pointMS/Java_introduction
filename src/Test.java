@@ -1,14 +1,16 @@
+
 import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
+
 
         Scanner input = new Scanner(System.in);
         int binaryNumber = 0;
         int counter = 0;
         int number = 0;
 
-        System.out.print("Input binary number: ");
+        //System.out.print("Input binary number: ");
         binaryNumber = input.nextInt();
 
         //it's going to stop when the binaryNumber/10 is less than 0
@@ -29,6 +31,8 @@ public class Test {
             counter++;
 
         }
-        System.out.println("Decimal number : " + number);
+        //System.out.println("Decimal number : " + number);
     }
+
+
 }

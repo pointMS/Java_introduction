@@ -1,4 +1,4 @@
-package Sorting;
+package Exercises;
 
 public class SnowFlake {
     public static void main(String[] args) {

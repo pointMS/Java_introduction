@@ -6,7 +6,7 @@ import java.util.Arrays;
  * FirstNewVersion
  * 11.06.2020
  */
-public class Ls35HwArrays2_20 {
+public class Ls35HwArrays2_20_21 {
     public static void main(String[] args) {
 //        int[] a1 = {1, 4, 5, 6, 2}; // true
 //        int[] a2 = {1, 2, 3}; // true
@@ -21,6 +21,13 @@ public class Ls35HwArrays2_20 {
         System.out.println(Arrays.toString(tenRun(b1)));
         System.out.println(Arrays.toString(tenRun(b2)));
         System.out.println(Arrays.toString(tenRun(b3)));
+
+        int[] q = {2, 10, 3, 4, 20, 5}; //→ [2, 10, 10, 10, 20, 20]
+        int[] w = {10, 1, 20, 2}; //[10, 10, 20, 20]
+        int[] e = {10, 1, 9, 20}; //[10, 10, 10, 20]
+        System.out.println(Arrays.toString(tenRunOne(q)));
+        System.out.println(Arrays.toString(tenRunOne(w)));
+        System.out.println(Arrays.toString(tenRunOne(e)));
 
     }
 
@@ -49,6 +56,17 @@ public class Ls35HwArrays2_20 {
             }
             if (input[i] == 20) {
                 input[i + 1] = 20;
+            }
+        }
+        return input;
+    }
+
+    private static int[] tenRunOne(int[] input) {
+        for (int i = 0; i < input.length - 1; i++) {
+            if (input[i] % 10 == 0) {
+                while (input[i + 1] % 10 != 0) { // до тех пор пока след. значение не кратное 10
+                    input[i + 1] = input[i];
+                }
             }
         }
         return input;
