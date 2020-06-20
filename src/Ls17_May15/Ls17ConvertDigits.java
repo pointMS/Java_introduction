@@ -2,7 +2,7 @@ package Ls17_May15;
 
 import java.util.Scanner;
 
-public class Ls17ConvertDidits {
+public class Ls17ConvertDigits {
     // двоичные в десятичные
     public static void binaryToDecimal() {
         String binary = "";
@@ -23,7 +23,7 @@ public class Ls17ConvertDidits {
 1 * 2^5 + 1 * 2^4 + 0 * 2^3 + 0 * 2^2 + 0 * 2^1 + 1 * 2^0 = 49
   */
 
-    public static void testMethode() {
+    public static void testMethod() {
         String test = "0757";
         int decimalTest = Integer.parseInt(test, 8);
         System.out.println(decimalTest);

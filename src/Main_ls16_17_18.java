@@ -3,7 +3,7 @@ import Ls18_May18.LS18MyRound;
 /**
  * First * 14.05.2020  12:09
  */
-public class Main {
+public class Main_ls16_17_18 {
     public static void main(String[] args) {
         //Ls16President.electionResult();
         //System.out.println(Ls16.Ls16Alkohol.kasse());
